@@ -21,8 +21,8 @@ from tests.support.unit import skipIf
 
 @pytest.mark.skip_if_not_root
 @pytest.mark.destructive_test
-@pytest.mark.windows_whitelisted
 @skipIf(not salt.utils.platform.is_linux(), "These tests can only be run on linux")
+@pytest.mark.windows_whitelisted
 class ShadowModuleTest(ModuleCase):
     """
     Validate the linux shadow system module
