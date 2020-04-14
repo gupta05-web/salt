@@ -16,6 +16,7 @@ runTestSuite(
         integration: 4
     ],
     testrun_timeout: 5,
+    inactivity_timeout_minutes: 60,
     use_spot_instances: true)
 
 // vim: ft=groovy
